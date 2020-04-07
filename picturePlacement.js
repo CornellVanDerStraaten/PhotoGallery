@@ -22,18 +22,19 @@ const photoLinks = [
 
 const photoWrapper = document.getElementById('photoWrapper');
 
-function placePhoto(url) {
-    let photoDiv = document.createElement('div');
-    photoDiv.className = 'photoDiv';
-    let photo = document.createElement('img');
-    photo.src = url;
-    photo.alt = 'Photo of the galaxy, stars and planets.';
-    photoDiv.append(photo);
-    photoWrapper.append(photoDiv);
-}
-
-for(let i=photoLinks.length; i>0; i--) {
-    let randomNumber = Math.floor(Math.random()*photoLinks.length);
-    placePhoto(photoLinks[randomNumber] );
-    photoLinks.splice(randomNumber, 1);
-}
+// function placePhoto(url) {
+//     let photoDiv = document.createElement('div');
+//     photoDiv.className = 'photoDiv';
+//     let photo = document.createElement('img');
+//     photo.src = url;
+//     photo.alt = 'Photo of the galaxy, stars and planets.';
+//     photoDiv.append(photo);
+//     photoWrapper.append(photoDiv);
+// }
+// function showRandomImages() {
+//    for(let i=photoLinks.length; i>0; i--) {
+//     let randomNumber = Math.floor(Math.random()*photoLinks.length);
+//     placePhoto(photoLinks[randomNumber] );
+//     photoLinks.splice(randomNumber, 1);
+//     } 
+// }
