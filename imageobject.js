@@ -1,6 +1,5 @@
 let objectArray = [];
-// console.log(photoLinks);
-// ImageObject
+
 function ImageObject(name, description) {
     let imgObj = this;
     imgObj.name = name;
@@ -45,7 +44,9 @@ function createJSON() {
 
 function requestListener() {
     let obj = JSON.parse(this.response)
+    objectArray = obj.slice();
 }
+
 function createGetRequest() {
     let request = new XMLHttpRequest();
     request.addEventListener("load", requestListener);
